@@ -1,0 +1,23 @@
+server:
+   port: 8001
+   
+spring:
+  application:
+      name: userprofile
+  data:
+      mongodb:
+       database=new
+        host=localhost
+        port=27017
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+      instance:
+      preferIpAddress: true
+      
+userprofile:
+  app:
+    jwtExpirationMs: 86400000
+    jwtSecret: shoppingcartSecretKey
+
